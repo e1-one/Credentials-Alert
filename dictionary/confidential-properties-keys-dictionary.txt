@@ -1,0 +1,9 @@
+username
+password
+bing-key
+salt
+crypto-key
+api-key
+user
+passwd
+userid
