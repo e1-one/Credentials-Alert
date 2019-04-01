@@ -1,0 +1,29 @@
+## global definitions
+
+one.possible.case.username: ivan1
+some:
+  eureca.casa.userid: '{cipher}AQCQEN/R4oh8zyGQ2kqWCxnOGgYYsW1boH5fyiLygRRiHd4m/d/+NGbrH01yGK+NpHnuwquLEDkSnGhTObdEy44xj5uWE4JZK3ku8i2a1L+MeyVwiieiiYrYSaklc/j7AFxhdofOtJQdV4StXm0Wx16CBoD6A5+LDRsMOLZUSHvmVS9X+xa9Q41l4jpoelFvEa/81KJblEgKQYLwtT2/DNF7vF3LAlaNingwnCRCGtYPTSO9RgRTQOhk+zigY8Xn09p4AjpaIoSVcgbQ+quN9Briqv+pa6z4scFiGT0/UnjYxiW0KusUvpyCy6Tiharw2jh5temPmmY8sPclP41ww8v5AN7y76F7+WVB2eNj0jLyxqSNJOTXYbV6x51nP0eeIwA='
+  eureca.casa.auth.user: '{cipher}AQBpsWuCmsDyuvBvLQHH+0zoWg9tcmAsD3s8Qa61W1Kfendele1HoKuL0q2siedYm2jwlSIZHJI9MbxjETlA9e5kheYt5qGIXGXNH1KcDsJvBvE2qZFXUm4aBymSX4ZWB2JsIEhaDmSqO+OUh9q5pFLt2k3PO5i9Za5G090LnHSMn5ZOioV6VmfOW5i5EoXDVNDnMlIht8fbsJMOMefdd2ZbbUm55AcsZC2mzf5qVXVoVM/ZbzhT/E3vLxODBEM9zWhI48vaEoQX70Xhk9ndJdlOjG01vxLdJu/62htFScyTORzFyAR3Ez6YpC7Uc73iG4WAvRHC3glMK3Mxg+dIcg8WrecE04Atoe5bIqqbiQ5OXVCyugZq/IQntemi5V8D3B4='
+  eureca.casa.auth.pass: '{cipher}AQAmdrjLUsmWOpr2f5rOXVXaNTiJ7a6QCgrMYRzwfN3Jz37b1YVG9BCr8I4cPAvT9bg9yNPFEGMrLgdtd1iDDkFQTMwto1UNqEzuX/U9Wd7mAKxyjG02Pwy7BWvXupoYWB6KOelvlVX3Tm4q77Mh2T3tTTme7tYKnpU6QKqGmq+gy6KVnk/qEn/Q7rEPonL2Yl3tZj6+blcyO9Ue7TBb/lagULqn0rDudt5C4NAanyZbNdAfK8egchuMBjDHye8XPerYCpb6IDHxmPeS+dLnBK6llrM5f1cL0kcv54bwp7nOe7khR2wBMqPt9vVrmdNPX8W9+ON4tfD+r4MLrkCh2Pld0EBnh/TUcys7vuZ30DBzdKHwmsEEhVsvWdyvu/Z7t0w='
+other:
+   basis.userid: '1'
+   basis.passwd: 'qwerty123'
+   basis.lite.user: 'user1'
+
+global:
+  debug: yes
+  verbose: no
+  debugging:
+    detailed: no
+    header: "debugging started"
+  db:
+    username: {cipher}sdfsdfsdfsdfagsg1231241441
+    password: "{cipher}asfasfasfasfgasfasasfasf" 
+
+## output
+output:
+   file: "yes"
+   something-with-dash: dash-key
+   api-key: 123as-fasf123
+   salt: 123123123123123123123123
+   salt: 323232323232323232332

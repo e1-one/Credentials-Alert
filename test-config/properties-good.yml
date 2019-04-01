@@ -1,0 +1,20 @@
+## global definitions
+
+one.more.case.salt: {cipher}sdf4231asdf234asd23
+
+global:
+  debug: yes
+  verbose: no
+  debugging:
+    detailed: no
+    header: "debugging started"
+  db:
+    username: {cipher}sdfsdfsdfsdfagsg1231241441
+    password: "{cipher}asfasfasfasfgasfasasfasf" 
+
+## output
+output:
+   file: "yes"
+   something-with-dash: dash-key
+   api-key: {cipher}asdfaf7fasdfasdf76sdf76asdfsddfa=
+   salt: {cipher}dfsg65df7h9sg789jsfg789jsfgjsfgj768sj=

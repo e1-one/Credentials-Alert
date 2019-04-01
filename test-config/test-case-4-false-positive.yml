@@ -1,0 +1,4 @@
+
+false1:
+  alarm1:
+    password: 'this is not a password' #FalsePositive
