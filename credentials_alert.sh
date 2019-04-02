@@ -8,7 +8,7 @@ false_positive_pattern="#FalsePositive"
 dictionary_file="./dictionary/confidential-properties-keys-dictionary.txt"
 
 IFS=$'\n' read -d '' -r -a dictionary < $dictionary_file
-echo "Keys that we are analysing: ${dictionary[@]}"
+echo "Keys that we are analyzing: ${dictionary[@]}"
 
 function containsKey {
   #echo "SEARCH: "$1
@@ -115,7 +115,7 @@ function process_ymls_in_folder {
 
   for file in ${array_ymls_files[@]};
   do
-    echo "Analysing file:"$file;
+    echo "Analyzing file:"$file;
     process_yml $file
   done
 }
