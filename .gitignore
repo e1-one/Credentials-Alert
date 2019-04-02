@@ -1,0 +1,15 @@
+### Intellij ###
+.idea
+.idea/
+*.iml
+/out/
+
+### Common ###
+.DS_Store
+target/
+.history
+.cache
+logs/
+
+### Node ###
+node_modules/
