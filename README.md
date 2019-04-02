@@ -42,7 +42,7 @@ Example of ignored property: `password: 'this is fake password' #FalsePositive`
 | 1 |  Alerts occurred                           |
 
 ### Run unit tests for the script 
-> ./test_cred_alert.sh \
+> ./test_cred_alert.sh
 
 Should see in output:
 ```

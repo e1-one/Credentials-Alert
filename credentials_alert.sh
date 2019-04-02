@@ -50,7 +50,7 @@ function property_audit {
         then
           echo "DEBUG: $property_key value is false positive"
         else
-	        alerts_array+=($3"["$4"]:"$property_key)
+	      alerts_array+=($3"["$4"]:"$property_key)
         fi
       fi
   else
