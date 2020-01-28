@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a multi-line script
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        echo "Running the test script"
+        ./test_cred_alert.sh
