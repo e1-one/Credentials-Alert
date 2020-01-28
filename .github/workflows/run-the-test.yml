@@ -9,10 +9,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run a multi-line script
+    - name: Preparation steps
       run: |
-        echo "Running the test script"
         ls -lah
         chmod 700 test_cred_alert.sh
+        chmod 700 credentials_alert.sh
+    - name: Running the tests
+      run: |
         ./test_cred_alert.sh
-        echo "Finish"
