@@ -64,7 +64,7 @@ function property_audit {
 #return - 'level3'
 function getLastPartFromCompositeKey {
   IFS='.' read -r -a keys <<< "$1"
-  echo ${keys[-1]}
+  echo ${keys[*]: -1}
 }
 
 function process_yml {
@@ -83,13 +83,15 @@ function process_yml {
     #echo "DEGUG: processing line: $line"
     IFS=':' read -r -a key_and_value <<< "$line"
     array_size=${#key_and_value[@]}
-    if [ $array_size -eq 2 ]; #process only line that contains both key and value
+    if [ $array_size -eq 2 ]; #only if the line contains both a key and a value
     then
+      #echo "DEBUG. The line contains both key and value: $line"
       local key=$(getLastPartFromCompositeKey "${key_and_value[0]}")
+      #echo "DEBUG. The last key part is: $key"
       local value="${key_and_value[1]}"
       property_audit $key "$value" $input_file $line_counter
     else
-      : #echo "DEBUG: skip this line"
+      : #echo "DEBUG: skipping this line"
     fi
   done < "$input_file"
 }
@@ -102,10 +104,10 @@ function assert_alerts_array {
 
   if [ ${#alerts_array[@]} -ne 0 ];
   then
-    echo "Looks like we found some unsafe credentials!"
+    echo "Looks like we have found some unsafe credentials!"
     exit 1
   else
-    echo "Unsafe credentials do not found."
+    echo "Unsafe credentials haven't found."
     exit 0
   fi
 }
