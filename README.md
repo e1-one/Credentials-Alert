@@ -1,16 +1,16 @@
 # Credentials Alert
 **This bash script finds unencrypted credentials inside your configuration files.** \
-Example of a property file with one unsafe property:
+Example of input file: a property .yaml file with one unsafe property:
 ``` yaml
 service:
   user-service:
-    password: 'P@$$word' # <- You probably do not want others to see this. This is unsafe.
+    password: 'P@$$word' # <- You probably do not want others to see this. This is unsafe !
     greeting-message: Hello world!
   sms-service:
     password: '{cipher}dlk7sasd54a13sda895da5ads3daxv3'` # this case is ok. Password is encrypted
 ```
 
-__The script scans property files and analyzing line by line for credentials and then alerts if it finds them.__ \
+__The script scans property files and analyzing line by line for credentials and shouts if finds them.__ \
 Keys for properties that need to be analyzed are stored in _dictionary/confidential-properties-keys-dictionary.txt_
 
 ## Execution example
